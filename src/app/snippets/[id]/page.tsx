@@ -13,7 +13,6 @@ export default async function SnippetShowPage(props: any) {
   if (!snippet) {
     return notFound();
   }
-
   const deleteSnippetAction = actions.deleteSnippet.bind(null, snippet.id);
 
   return (
